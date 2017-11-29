@@ -1,0 +1,37 @@
+<div class="login-div">
+    <% include ./partials/navbar %>
+    <div class="container">
+      <div id="log-in-div" class="shadow">
+          <div id="login-div-top-div">
+              <h3 class="yellow_text"><img src="images/logo.png"> Login </h3>
+          </div>
+          <hr/>
+          <br/>
+          <% if(message) { %>
+              <span class="label label-danger"><%= message %></span>
+              <br/>
+              <br/>
+          <% } %>
+
+          <form method="post" action="/login">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">E</span>
+                <input type="text" class="form-control" placeholder="Email Address" aria-describedby="basic-addon1" name="email">
+              </div>
+              <br/>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2">P</span>
+                <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" name="password">
+              </div>
+              <br/>
+              <a href="#"><h6>Forgot Your Password?</h6></a>
+              <br/>
+              <input type="submit" class="login_button" value="Submit">
+              <br/>
+              <a href="/register_employee" class="login_button_green" role="button">Create Account</a>
+          </form>
+        </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>

@@ -1,0 +1,77 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img class="sharelock_logo" alt="Brand" src="./images/logo.png"><h4 class="sharelock_logo_text">Sheerlockhomes</h4></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="sheerlock-navbar-a" href="/">Home</a></li>
+        <li><a class="sheerlock-navbar-a" href="/about">Home Organomics</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle sheerlock-navbar-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hire<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/friends">A Friend</a></li>
+            <li><a href="/aunty">An Auntie</a></li>
+            <li><a href="/granny">A Granny</a></li>
+            <li><a href="/maids">A Maid</a></li>
+            <li><a href="/drivers">A Driver</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle sheerlock-navbar-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Hired<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/friends">Join Friend's</a></li>
+            <li><a href="/aunty">Join Auntie's</a></li>
+            <li><a href="/granny">Join Granny's</a></li>
+            <li><a href="#">Join Maid's</a></li>
+            <li><a href="#">Join Driver's</a></li>
+          </ul>
+        </li>
+        <li><a class="sheerlock-navbar-a" href="/contact">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle sheerlock-navbar-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="showMyElement('login-loader-div')" id="login-btn">Login</a></li>
+            <li><a href="#" onclick="showMyElement('signup-loader-div')">Signup</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/account/employer">Profile</a></li>
+            <li><a href="/profile/employer">Hires</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="loader-div" id="login-loader-div" onclick="hideMyElement('loader-div')">
+    <div class="loader">
+        <a href="#" class="close-text"><h1 class="text-right close-text" onclick="closeDarkDiv('login-loader-div')">&times;</h1></a>
+        <h2 class="text-center sheer-login-text">Login As</h2>
+        <br/>
+        <br/>
+        <a href="/employee_login"><h1 class="text-center sheer-login-link">Maid/Driver/Househelp</h1></a>
+        <br>
+        <a href="/employer_login"><h1 class="text-center sheer-login-link">Employer</h1></a>
+    </div>
+</div>
+
+<div class="loader-div" id="signup-loader-div" onclick="hideMyElement('loader-div')">
+    <div class="loader">
+        <a href="#" class="close-text"><h1 class="text-right close-text" onclick="closeDarkDiv('signup-loader-div')">&times;</h1></a>
+        <h2 class="text-center sheer-login-text">Signup As</h2>
+        <br/>
+        <br/>
+        <a href="/employee_signup"><h1 class="text-center sheer-login-link">Maid/Driver/Househelp</h1></a>
+        <br>
+        <a href="/employer_signup"><h1 class="text-center sheer-login-link">Employer</h1></a>
+    </div>
+</div>

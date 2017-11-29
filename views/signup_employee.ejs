@@ -1,0 +1,83 @@
+<div class="login-div">
+    <% include ./partials/navbar %>
+    <div class="container">
+
+        <% if(message) { %>
+            <span class="label label-danger"><%= message %></span>
+            <br/>
+            <br/>
+        <% } %>
+        <div id="signup-in-div" class="shadow" ng-controller="signupController">
+            <div id="login-div-top-div">
+                <h3 class="yellow_text"><img src="images/logo.png"> Signup</h3>
+            </div>
+            <hr/>
+            <br/>
+            <form method="post" action="/login">
+                <h4>Step 1 - Details</h4>
+                <br/>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">F</span>
+                  <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1" name="firstname">
+                </div>
+                <br/>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">L</span>
+                  <input type="text" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1" name="lastname">
+                </div>
+                <br/>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon2">E</span>
+                  <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" name="email">
+                </div>
+                <br/>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon2">P</span>
+                  <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" name="password">
+                </div>
+                <br/>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon2">P</span>
+                  <input type="text" class="form-control" placeholder="Retype Password" aria-describedby="basic-addon1" name="repassword">
+                </div>
+                <br/>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon2">S</span>
+                  <input type="state" class="form-control" placeholder="State" maria-describedby="basic-addon1" name="state">
+                </div>
+                <br/>
+                <hr/>
+                <br/>
+                <h4>Step 2 - Profile Picture</h4>
+                <h5 class="grey_text">Add a Profile Image</h5>
+                <br/>
+                <img ng-src="{{profile_img}}" class="profile_image">
+                <br/>
+                <input type="file" required accept="image/*" file-model="myFile" id="fieldVideo" name="photo" class="my_submit_btn"/>
+                <br/>
+                <hr/>
+                <br/>
+                <h4>Step 3 - Profile Video</h4>
+                <h5 class="grey_text">Its easier for people to get in touch with you once they see a video of you</h5>
+                <br/>
+                <img ng-src="{{video_img}}" class="profile_image">
+                <input type="file" required accept="video/*" file-model = "myvideo" id="fieldPhoto" name="photo" class="my_submit_btn"/>
+                <br/>
+                <hr/>
+                <br/>
+                <input type="submit" class="login_button" value="Continue">
+                <br/>
+                <a href="/employee_login" class="login_button_green" role="button">Signin</a>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<% include ./partials/footer %>

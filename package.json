@@ -1,0 +1,43 @@
+{
+  "name": "Sheerlockhomes",
+  "version": "1.0.0",
+  "description": "Home Services Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Joshua Majebi",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "Faker": "^0.7.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.16.1",
+    "express-ejs-layouts": "^2.3.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "express-sessions": "^1.0.6",
+    "formidable": "^1.1.1",
+    "handlebars-group-every": "^1.0.1",
+    "mongoose": "^4.11.14",
+    "mongoose-createdmodified": "0.0.2",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.2.1",
+    "request": "^2.83.0",
+    "restify": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

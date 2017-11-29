@@ -1,0 +1,199 @@
+<div class="login-div">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img class="sharelock_logo" alt="Brand" src="../../../../images/logo.png"><h4 class="sharelock_logo_text">Sheerlockhomes</h4></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="sheerlock-navbar-a" href="/">Home</a></li>
+          <li><a class="sheerlock-navbar-a" href="/about">Home Organomics</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle sheerlock-navbar-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hire<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/friends">A Friend</a></li>
+              <li><a href="/aunty">An Aunty</a></li>
+              <li><a href="/granny">A Granny</a></li>
+              <li><a href="#">A Maid</a></li>
+              <li><a href="#">A Driver</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle sheerlock-navbar-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Hired<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/friends">Join Friend's</a></li>
+              <li><a href="/aunty">Join Aunty's</a></li>
+              <li><a href="/granny">Join Granny's</a></li>
+              <li><a href="#">Join Maid's</a></li>
+              <li><a href="#">Join Driver's</a></li>
+            </ul>
+          </li>
+          <li><a class="sheerlock-navbar-a" href="/contact">Contact Us</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle sheerlock-navbar-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="showMyElement('login-loader-div')" id="login-btn">Login</a></li>
+              <li><a href="#" onclick="showMyElement('signup-loader-div')">Signup</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/profile">Profile</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="loader-div hidden" id="login-loader-div" onclick="hideMyElement('loader-div')">
+      <div class="loader">
+          <a href="#" class="close-text"><h1 class="text-right close-text" onclick="closeDarkDiv('login-loader-div')">&times;</h1></a>
+          <h2 class="text-center sheer-login-text">Login As</h2>
+          <br/>
+          <br/>
+          <a href="/employee_login"><h1 class="text-center sheer-login-link">Maid/Driver/Househelp</h1></a>
+          <br>
+          <a href="/employer_login"><h1 class="text-center sheer-login-link">Employer</h1></a>
+      </div>
+  </div>
+
+  <div class="loader-div hidden" id="signup-loader-div" onclick="hideMyElement('loader-div')">
+      <div class="loader">
+          <a href="#" class="close-text"><h1 class="text-right close-text" onclick="closeDarkDiv('signup-loader-div')">&times;</h1></a>
+          <h2 class="text-center sheer-login-text">Signup As</h2>
+          <br/>
+          <br/>
+          <a href="/employee_signup"><h1 class="text-center sheer-login-link">Maid/Driver/Househelp</h1></a>
+          <br>
+          <a href="/employer_signup"><h1 class="text-center sheer-login-link">Employer</h1></a>
+      </div>
+  </div>
+
+  <div class="container">
+        <div class="row sheerlock-search-div">
+            <br/>
+            <h3>Select
+              <% if (type == 'Auntie') { %>
+                   an
+              <% } else { %>
+                   a
+              <% } %>
+
+               <%= type %></h3>
+            <br/>
+            <li class="dropdown" style="margin-left:auto; margin-right:auto; width: 150px;" id="employees-dropdown">
+              <a href="#" class="dropdown-toggle sheerlock-navbar-a" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employee Type<span class="caret"></span></a>
+              <ul class="dropdown-menu" id="employees-dropdown-menu">
+                <li><a href="/employees/1/type/Friend" class="yellow_text">Friend</a></li>
+                <li><a href="/employees/1/type/Auntie" class="yellow_text">Auntie</a></li>
+                <li><a href="/employees/1/type/Granny" class="yellow_text">Granny</a></li>
+                <li><a href="/employees/1/type/Maid" class="yellow_text">Maid</a></li>
+                <li><a href="/employees/1/type/Driver" class="yellow_text">Driver</a></li>
+              </ul>
+            </li>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <div class="row">
+          <% for (var i = 0; i < employees.length; i++) { %>
+              <div class="col-md-4 col-sm-4">
+                  <div class="thumbnail">
+                      <img src="<%= employees[i].photo_url %>">
+                      <div class="caption">
+                          <h3><%= employees[i].firstname %></h3>
+                          <p><%= employees[i].type %></p>
+                          <% for (var j = 0; j < 5; j++) { %>
+                              <% if ((j+1) > employees[i].average_rating) { %>
+                                  <span class="fa fa-star"></span>
+                              <% } else { %>
+                                  <span class="fa fa-star checked"></span>
+                              <% } %>
+                          <% } %>
+                          <br/>
+                          <br/>
+                          <a class="">Select Me</a>
+                      </div>
+                  </div>
+              </div>
+          <% } %>
+        </div>
+        <% if (pages > 0) { %>
+            <ul class="pagination text-center">
+                <% if (current == 1) { %>
+                    <li class="disabled"><a>First</a></li>
+                <% } else { %>
+                    <li><a href="/employees/1/type/<%= type %>">First</a></li>
+                <% } %>
+                <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                <% if (i !== 1) { %>
+                    <li class="disabled"><a>...</a></li>
+                <% } %>
+                <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+                    <% if (i == current) { %>
+                        <li class="active"><a><%= i %></a></li>
+                    <% } else { %>
+                        <li><a href="/employees/<%= i %>/type/<%= type %>"><%= i %></a></li>
+                    <% } %>
+                    <% if (i == Number(current) + 4 && i < pages) { %>
+                        <li class="disabled"><a>...</a></li>
+                    <% } %>
+                <% } %>
+                <% if (current == pages) { %>
+                    <li class="disabled"><a>Last</a></li>
+                <% } else { %>
+                    <li><a href="/employees/<%= pages %>/type/<%= type %>">Last</a></li>
+                <% } %>
+            </ul>
+        <% } %>
+  </div>
+</div>
+
+<div class="sharelock-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <img class="img-responsive sheerlock-img" alt=" Brand" src="../../../../images/logo_large.png">
+                <h4 class="text-center">Sheerlockhomes</h4>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h5 class="text-center sheerlock-copyright-text">Copyright(C)2017</h5>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h4 class="text-center sheerlock-follow-text">Follow us on social media</h4>
+                <div class="row sharelock-socials">
+                  <a href="http://facebook.com"><img src="../../../../images/facebookHover.png"/></a>
+                  <a href="http://instagram.com"><img src="../../../../images/instagramHover.png"/></a>
+                  <a href="http://twitter.com"><img src="../../../../images/twitterHover.png"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function () {
+          $("#slider").slider(
+          {
+              min: 18,
+              max: 40,
+              step: 1,
+              change: showValue
+
+          });
+          $("#update").click(function () {
+              $("#slider").slider("option", "value", $("#seekTo").val());
+
+          });
+          function showValue(event, ui) {
+              $("#val").html(ui.value);
+          }
+      });
+</script>

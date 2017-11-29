@@ -1,0 +1,28 @@
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+ integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 5000,
+          pause: false
+        })
+    })
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('signupController', function($scope) {
+        $scope.profile_img = "images/avatar2.png";
+        $scope.video_img = "images/youtube.png"
+        $scope.myFile;
+
+        $scope.uploadFile = function(){
+            console.log($scope.myFile);
+        }
+    });
+</script>

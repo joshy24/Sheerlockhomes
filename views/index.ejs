@@ -1,0 +1,181 @@
+<div class="home-div">
+    <% include ./partials/navbar %>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active carousel_item3">
+            <div class="carousel-caption">
+               <h1 class="text-center index_primary_text">Rent-a-Friend</h1>
+               <h2 class="text-center">Get a Friend to accompany you to that special event/occassion</h2>
+               <br/>
+               <a href="/friends" class="hire_button">Get Started</a>
+            </div>
+          </div>
+          <div class="item carousel_item1">
+            <div class="carousel-caption">
+                <h2 class="white_text text-center index_primary_text">Trust, Comfort, Safety in your home</h2>
+                <h4 class="yellow_text text-center index_secondary_text">Maids, Drivers and Aunties</h4>
+                <a href="/employees/1/type/Friend" class="hire_button">Hire Today</a>
+            </div>
+          </div>
+          <div class="item carousel_item2">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+</div>
+
+<div class="home-div-two">
+  <div class="container">
+      <div class="row">
+        <div class="home-div-two-value-div">
+              <img class="sharelock_logo_lg img-responsive" alt="Brand" src="images/logo_large.png"><h2 class="sharelock_logo_text_lg white_text">"We are about making the home a better place for you and your family"</h2>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="home-div-three"><!--featured employees-->
+  <div class="container">
+      <h2 class="text-center">Featured Employees</h2>
+      <br/>
+      <br/>
+      <div class="row">
+        <% for (var i = 0; i < featured.length; i++) { %>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="<%= featured[i].photo_url %>">
+                    <div class="caption">
+                        <h3><%= featured[i].firstname %> <%= featured[i].lastname %></h3>
+                        <p><%= featured[i].type %></p>
+                        <p>
+                          <% for (var j = 0; j < 5; j++) { %>
+                              <% if ((j+1) > featured[i].average_rating) { %>
+                                  <span class="fa fa-star"></span>
+                              <% } else { %>
+                                  <span class="fa fa-star checked"></span>
+                              <% } %>
+                          <% } %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+      </div>
+      <br/>
+      <a href="/employees/1/type/Friend" class="hire_button shadow" role="button">More?</a>
+  </div>
+</div>
+
+<div class="home-div-four"><!--join as an employee-->
+  <div class="container">
+      <h2 class="text-center">Looking For Work?</h2>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <br/>
+            <img src="images/friend.png" alt="Friend">
+            <div class="caption">
+              <h3 class="text-center sharelock-slim-text">Friend</h3>
+              <br/>
+              <a href="/friends" class="text-center"><h5 class="yellow_text">Who is a Friend?</h5></a>
+              <br/>
+              <p><a href="/employee_login" class="hire_button shadow" role="button">Join</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <br/>
+            <img src="images/aunty.png" alt="Aunty">
+            <div class="caption">
+              <h3 class="text-center sharelock-slim-text">Aunty</h3>
+              <br/>
+              <a href="/aunty" class="text-center"><h5 class="yellow_text">Who is an Auntie?</h5></a>
+              <br/>
+              <p><a href="/employee_login" class="hire_button shadow" role="button">Join</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <br/>
+            <img src="images/hotel-maid.png" alt="...">
+            <div class="caption">
+              <h3 class="text-center sharelock-slim-text">Maid</h3>
+              <br/>
+              <a href="/maids" class="text-center"><h5 class="yellow_text">Who is a Maid?</h5></a>
+              <br/>
+              <p><a href="/employee_login" class="hire_button shadow" role="button">Join</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <br/>
+            <img src="images/driver.png" alt="Driver">
+            <div class="caption">
+              <h3 class="text-center sharelock-slim-text">Driver</h3>
+              <br/>
+              <a href="/drivers" class="text-center"><h5 class="yellow_text">Who is a Driver?</h5></a>
+              <br/>
+              <p><a href="/employee_login" class="hire_button shadow" role="button">Join</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="home-div-five"><!--join as an employee-->
+  <div class="container">
+      <h2 class="text-center yellow_text">Maid / Home Owner Stories</h2>
+      <br/>
+      <div class="row">
+          <p><h3 class="white_text">"The bathtubs and shower stall were black. The fridge had food in it that was 3 years out of date, and stuff had been spilled...
+            .We also reported her to child services. She kept the kids, and did not change her ways"</h3></p>
+          <br/>
+          <br/>
+          <br/>
+          <p><a href="#" class="yellow_btn" role="button">View More</a></p>
+      </div>
+  </div>
+</div>
+<div class="home-div-six"><!--join as an employee-->
+  <div class="container">
+      <h2 class="white_text">Subscribe to our News Letter</h2>
+      <h4 class="white_text">Get All the latest information on maids, drivers, best deals and updates</h4>
+      <br/>
+      <div class="row">
+        <form method="post" action="/subscribe">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">E</span>
+              <input type="email" class="form-control hospital-name-field" placeholder="Email Address" aria-describedby="basic-addon1" name="email">
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <input type="submit" class="black_btn_subscribe" role="button" value="Subscribe"/>
+        </form>
+      </div>
+  </div>
+</div>
+
+<div class="loading-div" id="loading-div" onclick="hideMyElement('loading-div')">
+    <div class="loading"></div>
+</div>
+
+<% include ./partials/footer %>

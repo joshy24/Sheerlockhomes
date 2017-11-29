@@ -1,0 +1,868 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+a {
+  color: #EECA1E;
+  text-decoration: none;
+}
+
+.grey_text{
+    color: #99A3A4;
+}
+
+.yellow_text{
+    color: #EECA1E;
+}
+
+.white_text{
+    color: #FFFFFFFF;
+}
+
+.black_text{
+    color: #000000;
+}
+
+.green_background{
+   backgroud-color: #145A32;
+}
+
+.transparent_bg{
+    background-color: rgba(255,255,255,0);
+}
+
+.boarderless{
+    border: 0px;
+}
+
+h2 h4 h3 h1 a{
+  font-family: 'Lato';
+}
+
+.sheer-center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.friend-friend-div-text{
+    font-size: 40px;
+}
+
+#rent_text{
+   margin-top: 110px;
+   font-size: 55px;
+   margin-bottom: 30px;
+   font-family: 'Lato';
+}
+
+@media screen and (max-width: 449px){
+  #rent_text{
+     margin-top: 100px;
+     font-size: 40px;
+  }
+}
+
+.sheer-grey-hr{
+   margin-top: 0px;
+   height: 5px;
+   color: #979A9A;
+   background-color: #979A9A;
+   border: 0px;
+}
+
+.sheer-rent-ul{
+   list-style-type:square;
+}
+
+.sheer-rent-ul li{
+  font-family: 'Lato';
+   font-size: 16px;
+   margin-top: 14px;
+   margin-bottom: 14px;
+}
+
+.index_secondary_text{
+    margin-top: 40px;
+}
+
+.index_primary_text{
+      font-family: 'Lato';
+      font-size: 60px;
+      margin-top: 70px;
+}
+
+@media screen and (max-width: 570px){
+  .index_primary_text{
+        font-family: 'Lato';
+        font-size: 50px;
+        margin-top: 150px;
+  }
+
+  .home-div{
+      min-height: 700px;
+  }
+}
+
+
+.hire_button{
+    text-decoration: none;
+    background-color: #EECA1E;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.login_button{
+      text-decoration: none;
+      background-color: #EECA1E;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #000000;
+      text-align: center;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      border-radius: 20px;
+      border: 0px;
+      display: block;
+}
+
+.login_button_green{
+      text-decoration: none;
+      background-color: #145A32;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #FFFFFF;
+      text-align: center;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 20px;
+      border: 0px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.login_button:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.login_button_green:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+.hire_button_friends{
+    text-decoration: none;
+    background-color: #EECA1E;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 20px;
+    border:0px;
+}
+
+.yellow_btn{
+  text-decoration: none;
+  background-color: #EECA1E;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.black_btn{
+  text-decoration: none;
+  background-color: #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.black_btn_subscribe{
+  text-decoration: none;
+  background-color: #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+  display: block;
+  margin-left: auto;
+  margin-right: 5px;
+  text-align: center;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 0px solid #000000;
+
+  -moz-box-shadow:    0px 1px 1px 1px #000;
+  -webkit-box-shadow: 0px 1px 1px 1px #000;
+  box-shadow:         0px 1px 1px 1px #000;
+}
+
+.hire_button:hover{
+   text-decoration: none;
+}
+
+.navbar-colored{
+  background-color: #EECA1E;
+}
+
+.navbar-brand{
+    display: inline;
+}
+
+.sharelock_logo_lg{
+    display: inline-block;
+}
+
+.sharelock-slim-text{
+    font-family: 'Lato', sans-serif;
+}
+
+.sharelock_logo_text_lg{
+    display: inline;
+    font-size: 40px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1200px){
+  .sharelock_logo_text_lg{
+      font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .sharelock_logo_text_lg{
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .sharelock_logo_text_lg{
+      font-size: 30px;
+      margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .sharelock_logo_text_lg{
+      font-size: 24px;
+      margin-left: 10px;
+  }
+}
+
+.sharelock_logo{
+    float: left;
+    display: inline;
+}
+
+.sharelock_logo_text{
+    float: right;
+    display: inline;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #EECA1E;
+}
+
+a.navbar-brand{
+  margin-top: -5px;
+}
+
+.navbar{
+    background-color: rgba(255, 0, 0, 0);
+    border: 0px solid white;
+}
+
+.navbar-default{
+    background-color: rgba(255, 0, 0, 0);
+    border: 0px solid white;
+}
+
+.login-div{
+    min-height: 600px;
+
+}
+
+nav.navbar.navbar-default {
+    background-color: #000000;
+    border: 0px solid white;
+    border-radius: 0px;
+}
+
+.login-div-inner{
+    padding-top: 100px;
+}
+
+.friend-information-div{
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.friends-middle-div{
+    max-width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#friend-rent-div{
+    height: 400px;
+    background-color: #145A32;
+    padding-top: 100px;
+}
+
+#friend-join-div{
+    height: 400px;
+    background-color: #EECA1E;
+    padding-top: 100px;
+}
+
+#log-in-div{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   max-width: 500px;
+   margin-top: 50px;
+   margin-bottom: 100px;
+   padding-top: 10px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 20px;
+}
+
+#signup-in-div{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   margin-top: 50px;
+   margin-bottom: 100px;
+   padding-top: 10px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 20px;
+   max-width: 500px;
+}
+
+.profile_image{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.my_submit_btn{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 190px;
+}
+
+.sheer-navigation-div{
+   margin-top: 30px;
+}
+
+.sheer-navigation-active{
+   font-size: 16px;
+   color: #EECA1E;
+}
+
+.sheer-navigation-dull{
+   font-size: 16px;
+   color: grey;
+}
+
+.carousel_item1{
+    background-image: url("../images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    min-height: 700px;
+    width: 100%;
+}
+
+.carousel_item2{
+    background-image: url("../images/sofa.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    min-height: 700px;
+    width: 100%;
+}
+
+.carousel_item3{
+    background-image: url("../images/dark_sky.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    min-height: 700px;
+    width: 100%;
+}
+
+.home-div{
+    min-height: 700px;
+    width: 100%;
+    height: 100%;
+}
+
+.granny-div{
+    background-image: url("../images/granny.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.friend-div{
+    background-image: url("../images/friends.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.aunty-div{
+    background-image: url("../images/aunty.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.navbar{
+   margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: #EECA1E;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #EECA1E;
+    text-decoration: underline;
+}
+
+.home-div-two{
+    background-color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.home-div-two-value-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-div-five{
+   background-image: url("../images/bg4.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   min-height: 400px;
+   padding-top: 50px;
+   padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .home-div-five {
+        background-attachment: scroll;
+    }
+}
+
+.home-div-three{
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.home-div-five h3{
+    color:#FFFFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.home-div-four{
+   background-color: #F8F9F9;
+   padding-top: 40px;
+   padding-bottom: 60px;
+}
+
+.friend-div-works{
+    background-color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+.home-div-six{
+    background-color: #EECA1E;
+    min-height: 350px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#basic-addon1{
+   background-color: #000000;
+   color: #FFFFFF;
+}
+
+#basic-addon2{
+   background-color: #000000;
+   color: #FFFFFF;
+}
+
+.home-div-six h2{
+    margin-left: -15px;
+}
+
+.home-div-six h4{
+    margin-left: -15px;
+}
+
+.loader-div{
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+   position: fixed;
+   overflow:auto;
+   top: 0;
+   left: 0;
+   background: rgba(0,0,0,0.95);
+
+   /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+.sheer-login-text{
+   color: #FFFFFFFF;
+}
+
+.close-text{
+   color: #FFFFFFFF;
+   font-size: 80px;
+}
+
+.close-text:hover{
+   text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+  .close-text{
+    margin-right: 50px;
+  }
+
+  .sheer-login-text{
+     color: #FFFFFFFF;
+  }
+
+  .close-text{
+     color: #FFFFFFFF;
+     font-size: 80px;
+  }
+
+  .sheer-login-link{
+     font-size: 30px;
+  }
+
+  .loader{
+     padding-top: 0px;
+     margin-top: 0px;
+  }
+
+}
+
+.shadow {
+  -moz-box-shadow:    0px 1px 2px 1px #ccc;
+  -webkit-box-shadow: 0px 1px 2px 1px #ccc;
+  box-shadow:         0px 1px 2px 1px #ccc;
+}
+
+/*rating*/
+.checked {
+    color: orange;
+}
+/*end rating*/
+
+/*footer*/
+.sharelock-footer{
+    padding-top: 60px;
+    background-color: #000000;
+    min-height: 250px;
+    color: #FFFFFF;
+}
+
+.sheerlock-copyright-text{
+   padding-top: 60px;
+}
+
+.sheerlock-img{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.sharelock-socials{
+   padding-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+}
+
+.sheerlock-follow-text{
+    margin-top: 20px;
+}
+
+.sharelock-socials a{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 800px){
+   .sharelock-socials{
+       margin-bottom: 20px;
+   }
+
+   .sheerlock-copyright-text{
+       margin-bottom: 60px;
+    }
+
+    .sharelock-socials{
+       padding-top: 10px;
+    }
+}
+
+/*End Footer*/
+
+#login-div-top-div{
+   width: 130px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;;
+}
+
+.loading-div{
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+   position: fixed;
+   overflow:auto;
+   top: 0;
+   left: 0;
+   background: rgba(0,0,0,0.7);
+
+   /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+.loading {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #EECA1E;
+  border-bottom: 16px solid #EECA1E;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*pagination overwrite*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #EECA1E;
+  border-color: #EECA1E;
+}
+
+.pagination>li>a, .pagination>li>span {
+   color: #000000;
+}
+
+/* Style The Dropdown Button
+.dropbtn {
+    background-color: #EECA1E;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content
+.dropdown {
+    position: relative;
+    display: block;
+    width: 190px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+/* Dropdown Content (Hidden by Default)
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #EECA1E}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.sheerlock-search-div{
+    margin-left: 2px;
+}
+
+.filter-text{
+    margin-right: 100px;
+}
+
+.sheer-modal-content{
+   height: 400px;
+   background-color: #000000;
+   padding-left: 24px;
+}
+
+#employees-dropdown{
+   background-color: #000000;
+   padding: 20px;
+   list-style-type: none;
+}
+
+#employees-dropdown-menu{
+   background-color: #000000;
+}
+
+#employees-dropdown-menu li a{
+   color: #EECA1E;
+}
